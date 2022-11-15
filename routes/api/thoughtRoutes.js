@@ -19,13 +19,13 @@ router
   .put(updateThought)
   .delete(deleteThought);
 
-// /api/thoughts/:thoughtId/tags
-router.route('/:thoughtId/tags').post(addReaction);
+// /api/thoughts/:thoughtId/reactions
+router.route('/:thoughtId/reactions').post(addReaction);
 
-// /api/thoughts/:thoughtId/tags/:tagId
-router.route('/:thoughtId/tags/:tagId').delete(removeReaction);
+// /api/thoughts/:thoughtId/reactions/:reactionId
+router.route('/:thoughtId/reactions/:reactionId').delete(removeReaction);
 
 module.exports = router;
 
 
-/// I stole this straight out of assingment 26 appRoutes, no sname
+/// I stole this straight out of assingment 26 appRoutes, no shame
