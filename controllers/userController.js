@@ -38,12 +38,7 @@ module.exports = {
       .catch((err) => res.status(500).json(err));
   },
   addFriend(req,res) {
-    User.findByIdAndUpdate(req.params.userId, {$addToSet: {friends: req.perams.friendId}})
-    .then((user) => res.json(user))
-    .catch((err) => res.status(500).json(err));
-  },
-  deleteFriend(req,res) {
-    User.findByIdAndUpdate(req.params.userId, {$pull: {friends: req.perams.friendId}})
+    User.findByIdAndUpdate(req.params.userId, {$addtoset})
     .then((user) => res.json(user))
     .catch((err) => res.status(500).json(err));
   },
