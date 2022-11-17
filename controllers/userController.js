@@ -31,10 +31,10 @@ module.exports = {
     .then((user) => res.json(user))
     .catch((err) => res.status(500).json(err));
   },
-  // Delete a user and associated apps
+  // Delete a user and associated thoughts
   deleteUser(req, res) {
     User.findOneAndDelete({ _id: req.params.userId })
-      .then((user) =>res.json({ message: 'User and associated apps deleted!' }))
+      .then((user) =>res.json({ message: 'User and associated thoughts deleted!' }))
       .catch((err) => res.status(500).json(err));
   },
   addFriend(req,res) {

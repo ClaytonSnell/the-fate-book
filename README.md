@@ -10,7 +10,7 @@ This application is used to store info about a user and their thoughts, it simul
 After running npm i, npm run start, I have had the routes working in insomnia
 
 ## Links
-Walkthrought vid
 
+[Walkthrough Video](https://drive.google.com/file/d/1I3hX9o5IBjK9c_1oKwDArvSY68Uo27kc/view)
 
 git hub link
